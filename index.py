@@ -6,4 +6,4 @@ def get_new_by_id(news_id):
     return jsonify({"Ket qua binh phuong": utils.get_news_by_id(news_id)})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
